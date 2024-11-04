@@ -19,9 +19,9 @@ public class Part1 {
                     // Loop through each line in the current file
                     while ((line = fileReader.readLine()) != null) {
 
-                        String[] fields = line.split(",");
+                        
                         String[] fields2 = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
-                        if(fields2.length <= 1 && fields.length!=6){
+                        if(fields2.length!=6){
                             BufferedWriter bw1 = new BufferedWriter(new FileWriter("syntax_error_file.txt",true));
                             bw1.write(line + "\n");
                             bw1.close();
