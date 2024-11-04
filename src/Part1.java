@@ -20,7 +20,7 @@ public class Part1 {
                     while ((line = fileReader.readLine()) != null) {
 
                         String[] fields = line.split(",");
-                        String[] fields2 = line.split("");
+                        String[] fields2 = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
                         if(fields2.length <= 1 && fields.length!=6){
                             BufferedWriter bw1 = new BufferedWriter(new FileWriter("syntax_error_file.txt",true));
                             bw1.write(line + "\n");
