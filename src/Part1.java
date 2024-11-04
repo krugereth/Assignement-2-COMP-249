@@ -21,7 +21,7 @@ public class Part1 {
 
                         
                         String[] fields2 = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
-                        if(fields2.length!=6){
+                        if(fields2.length != 6){
                             BufferedWriter bw1 = new BufferedWriter(new FileWriter("syntax_error_file.txt",true));
                             bw1.write(line + "\n");
                             bw1.close();
