@@ -47,7 +47,6 @@ public class Part1 {
             System.out.println("File not found: part1_input_file_names.txt");
         } catch (IOException e) { // Handle other IO exceptions while reading the list file
             System.out.println("IO exception occurred: " + e.getMessage());
-            System.out.println("uhasdsfdifjha");
         }
     }
 }
